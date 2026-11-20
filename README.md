@@ -2,6 +2,10 @@
 
 Aplicação web *single-user* desenvolvida em **TypeScript** e **React** para gestão de ciclos de estudo (técnica Pomodoro) com persistência local via `localStorage`, retomada automática baseada em *timestamps* absolutos, alertas sonoros ao fim de cada fase e painel lateral de tarefas.
 
+## Link da Aplicação Hospedada (Deploy)
+
+- **Aplicação online (Netlify):** https://pomodoro-jp-silqueira.netlify.app
+
 ---
 
 ## Funcionalidades Implementadas
@@ -50,6 +54,16 @@ npm test
 ```bash
 npm run build
 ```
+
+---
+
+## Hospedagem (Netlify)
+
+O projeto está configurado para deploy contínuo no **Netlify** através do arquivo `netlify.toml` na raiz do repositório:
+- **Comando de build:** `npm run build`
+- **Diretório publicado:** `dist`
+- **Versão do Node.js:** `20`
+- **Redirecionamento SPA:** todas as rotas (`/*`) são encaminhadas para `/index.html` com status `200`
 
 ---
 
